@@ -4,12 +4,12 @@ namespace WHMCS\Module\Gateway\Mope;
 
 class Mope
 {
-    const MODULE_VERSION = "1.0.0"; 
+    const MODULE_VERSION = "1.1.0"; 
     const SUPPORTED_CURRENCIES = array("SRD", "USD", "EUR");
 
-    static function GetLatestVersion() {
+    static function GetLatestRelease() {
         $client = new \GuzzleHttp\Client();
-        $response = $client->get("https://store.celestify.com/wp-json/acf/v3/posts/732/latest_version");
+        $response = $client->get("https://api.github.com/repos/celestifyhq/mope-whmcs/releases/latest");
         if ($response->getStatusCode() >= 400) {
             $json = json_decode($response->getBody());
             if ($json === null) {
@@ -26,10 +26,23 @@ class Mope
         return json_decode($response->getBody());        
     }
 
+    static function GetLatestVersion() {
+        $latest_release = Mope::GetLatestRelease();
+        $latest_tag = $latest_release->tag_name;
+
+        $pattern = '/v([0-9]+\.[0-9]+\.[0-9]+)/';
+        preg_match($pattern, $latest_tag, $matches);
+        
+        if (!empty($matches)) {
+            return $matches[1];
+        }
+        throw new \WHMCS\Module\Gateway\Mope\Exception\ApiException("Unable to get latest version", 500);
+    }
+
     static function GetVersionDescription() {
         $latest_version = "UNKNOWN";
         try {
-            $latest_version = Mope::GetLatestVersion()->latest_version;
+            $latest_version = Mope::GetLatestVersion();
         }
         catch(\Exception $e) {
             $latest_version = "UNKNOWN";
