@@ -1,0 +1,31 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-gateways",
+    "name": "mope",
+    "license": "proprietary",
+    "category": "payments",
+    "description": {
+      "name": "Mopé",
+      "tagline": "Accept Mopé mobile app payments in WHMCS.",
+      "long": "Mopé Gateway for WHMCS allows you to accept Mopé mobile app payments in WHMCS. In order to use this payment gateway you need to contact Hakrinbank to sign the Mopé online agreement. You can find more information about Mopé at: https://mope.sr/",
+      "features": [
+          "Accept payments in SRD, EUR and USD from Mopé mobile wallet users",
+          "Mopé works for users in Suriname and the Netherlands"
+      ]
+    },
+    "logo": {
+      "filename": "logo.png"
+    },
+    "support": {
+      "homepage": "https:\/\/github.com\/celestifyhq\/mope-whmcs", 
+      "learn_more": "https:\/\/github.com\/celestifyhq\/mope-whmcs",
+      "docs_url": "https:\/\/github.com\/celestifyhq\/mope-whmcs",
+      "support_url": "https:\/\/celestify.com\/support"
+    },
+    "authors": [
+      {
+        "name": "Celestify",
+        "homepage": "https:\/\/www.celestify.com\/"
+      }
+    ]
+  }
