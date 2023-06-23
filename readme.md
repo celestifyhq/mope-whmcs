@@ -1,5 +1,13 @@
-# Mopé Gateway for WHMCS
-Mopé Gateway for WHMCS allows you to accept Mopé mobile app payments in WHMCS. In order to use this payment gateway you need to contact Hakrinbank to sign the Mopé online agreement. You can find more information about Mopé at: https://mope.sr/
+</div>
+<div align="center"><img src="Mope-Gateway-for-WHMCS.png" />
+</div>
+
+<div align="center">
+<h1>Mopé Gateway for WHMCS</h1>
+
+Mopé Gateway for WHMCS allows you to **accept Mopé mobile app payments in WHMCS**. In order to use this payment gateway you need to contact Hakrinbank to sign the Mopé online agreement. You can find more information about Mopé at: https://mope.sr/
+
+</div>
 
 ## WHMCS Versions Supported
 Currently this payment gateway supports the following versions of WHMCS:
@@ -29,9 +37,9 @@ In the **Test API Key** and **Live API Key** boxes, enter the API keys received 
 
 ## Features
 
-| Type             | One Time | Recurring | Refunds |
-|------------------|----------|-----------|---------|
-| Mopé App Payment | Yes      | No        | No      |
+| Type             | One Time Payments | Recurring Payments | Refunds |
+|------------------|-------------------|--------------------|---------|
+| Mopé App Payment | Yes               | No                 | No      |
 
 
 ## Updates
