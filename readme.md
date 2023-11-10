@@ -1,58 +1,61 @@
-</div>
-<div align="center"><img src="Mope-Gateway-for-WHMCS.png" />
-</div>
+<div align="center"><img src="Mope-Gateway-for-WHMCS.png" /></div>
 
 <div align="center">
-<h1>Mopé Gateway for WHMCS</h1>
+<h1>Mopé Gateway voor WHMCS</h1>
 
-Mopé Gateway for WHMCS allows you to **accept Mopé mobile app payments in WHMCS**. In order to use this payment gateway you need to contact Hakrinbank to sign the Mopé online agreement. You can find more information about Mopé at: https://mope.sr/
+Mopé Gateway voor WHMCS biedt de mogelijkheid om **betalingen via de Mopé mobile app in WHMCS te ontvangen**. Om deze payment gateway te gebruiken moet je contact opnemen met Hakrinbank om de Mopé online overeenkomst te tekenen. Meer informatie over Mopé vind je op: https://mope.sr/
 
 </div>
 
-## WHMCS Versions Supported
-Currently this payment gateway supports the following versions of WHMCS:
+## Ondersteunde WHMCS Versies
+Momenteel ondersteunt deze betaalgateway de volgende versies van WHMCS:
 
 * 8.x
 
 ## Features
-* Accept payments in SRD, EUR and USD from Mopé mobile wallet users.
+* Ontvang betalingen in SRD, EUR en USD van Mopé mobile wallet users.
 
-## Installation
-To install the Mopé module in WHMCS, download and unzip the module files, followed by uploading the files to your your WHMCS installation as follows:
+## Installatie
+Om de Mopé module in WHMCS te installeren, download en unzip de module bestanden, gevolgd door het uploaden van de bestanden naar je WHMCS installatie als volgt:
 
-1. From the module root folder, copy the file named `mope.php` and place it in the `/modules/gateways/` folder of your WHMCS installation.
-2. From the `callback/` folder in the module folder, copy the other `mope.php` file and place it in the `/modules/gateways/callback` folder of your WHMCS installation.
-3. Copy the `mope/` folder from the module folder into the `/modules/gateways/` folder of your WHMCS installation.
+1. Kopieer vanuit de rootmap van de module het bestand `mope.php` en plaats dit in de map `/modules/gateways/` van je WHMCS installatie.
+2. Kopieer vanuit de map `callback/` in de modulemap het andere `mope.php` bestand en plaats dit in de map `/modules/gateways/callback` van je WHMCS installatie.
+3. Kopieer de map `mope/` vanuit de modulemap naar de map `/modules/gateways/` van je WHMCS installatie.
 
 ## Setup
-To activate the Mopé module in WHMCS, navigate to **Configuration () > System Settings > Payment Gateways > Visit Apps & Integrations** and search for Mopé, or, prior to WHMCS 8.6, **Setup > Payments > Payment Gateways** and choose Mopé from the “All Payment Gateways” tab.
+Om de Mopé module in WHMCS te activeren, ga naar **Configuration () > System Settings > Payment Gateways > Visit Apps & Integrations** en zoek naar Mopé, of, vanaf WHMCS 8.6, **Setup > Payments > Payment Gateways** en kies Mopé uit het tabblad “All Payment Gateways”.
 
-Once activated, you need to enter your credentials in the appropriate boxes, as shown below.
+Eenmaal geactiveerd, moet je je inloggegevens invoeren in de daarvoor bestemde vakken, zoals hieronder getoond.
 
-![Mopé setup page](mope-setup.png)
+![Mopé instellingenpagina](mope-setup.png)
 
-In the **Display Name** box, customise the name to something more friendly such as “Mopé”.
+In het vak **Display Name**, pas de naam aan naar iets vriendelijkers zoals “Mopé”.
 
-In the **Test API Key** and **Live API Key** boxes, enter the API keys received from the Mopé team. If you want to use test mode, make sure you have entered a Test API Key.
+In de vakken **Test API Key** en **Live API Key**, voer de API sleutels in die je van het Mopé team hebt ontvangen. Als je de test mode wilt gebruiken, zorg dan dat je een Test API Key hebt ingevoerd.
 
 ## Features
 
-| Type             | One Time Payments | Recurring Payments | Refunds |
-|------------------|-------------------|--------------------|---------|
-| Mopé App Payment | Yes               | No                 | No      |
+| Type             | One Time Payments    | Recurring Payments      | Refunds        |
+|------------------|----------------------|-------------------------|----------------|
+| Mopé App Betaling| Ja                   | Nee                     | Nee            |
 
 
 ## Updates
-Gateway updates will be released as needed, including new features, bug fixes and security enhancements.
+Updates van de gateway worden indien nodig uitgebracht, inclusief nieuwe functies, bugfixes en beveiligingsverbeteringen.
 
-## FAQ
+## Veelgestelde Vragen
 
 <details>
-<summary>Can I copy, modify or redistribute this payment gateway?</summary>
- This module is open source and MIT licensed, such that you may copy, modify or redistribute this payment gateway as you wish.
+<summary>Kan ik deze gateway kopiëren, aanpassen of redistribueren?</summary>
+ Ja, deze module is open source en MIT gelicenseerd, zodat je deze gateway naar wens mag kopiëren, aanpassen of redistribueren.
 </details>
 
 <details>
-<summary>Is Mopé available in all countries?</summary>
- Currently Mopé works for users in Suriname and the Netherlands.
+<summary>Is Mopé beschikbaar in alle landen?</summary>
+ Nee, momenteel is Mopé alleen voor users in Suriname en Nederland beschikbaar.
+</details>
+
+<details>
+<summary>Mag ik bijdragen aan de ontwikkeling van deze gateway?</summary>
+Natuurlijk, dat kan zeker. Wij staan open voor pull requests, maar open aub eerst een issue om de voorgestelde wijzigingen uit te leggen.
 </details>
